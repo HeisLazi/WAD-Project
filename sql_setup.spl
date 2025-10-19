@@ -1,0 +1,43 @@
+-- Create database
+CREATE DATABASE IF NOT EXISTS campus_polls;
+USE campus_polls;
+
+-- Drop existing tables if they exist
+DROP TABLE IF EXISTS memes;
+DROP TABLE IF EXISTS polls;
+
+-- Table structure for polls
+CREATE TABLE polls (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    question VARCHAR(255) NOT NULL,
+    option1 VARCHAR(100) NOT NULL,
+    option2 VARCHAR(100) NOT NULL,
+    votes1 INT(11) DEFAULT 0,
+    votes2 INT(11) DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Table structure for memes
+CREATE TABLE memes (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    filename VARCHAR(255) NOT NULL,
+    uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Insert sample poll data
+INSERT INTO polls (question, option1, option2, votes1, votes2) VALUES
+('Who is the best lecturer for WAD621S?', 'Mr. Nghipandulwa', 'Ms. Shikongo', 15, 12),
+('What should be served at the campus cafeteria?', 'Kapana & Pap', 'Pizza & Burgers', 23, 18),
+('Best time for lectures?', 'Morning (8AM-12PM)', 'Afternoon (2PM-6PM)', 28, 14);
+
+-- Insert sample meme data (placeholder - actual files need to be uploaded)
+INSERT INTO memes (filename) VALUES
+('sample_meme1.jpg'),
+('sample_meme2.jpg');
+
+-- Verify data
+SELECT * FROM polls;
+SELECT * FROM memes;
+
+-- Display success message
+SELECT 'Database setup completed successfully!' AS Status;
