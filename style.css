@@ -107,6 +107,11 @@ header h1 {
     transition: all 0.3s ease;
 }
 
+.feature-card:hover {
+    transform: translateY(-5px); /* Lifts card on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 .feature-card h3 {
     color: var(--primary-blue);
     margin-bottom: 1rem;
