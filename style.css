@@ -1,0 +1,7 @@
+/* === RESET STYLES === */
+/* Resets default margin, padding, and box-sizing for all elements */
+*, *::before, *::after  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
