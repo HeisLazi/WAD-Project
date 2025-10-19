@@ -123,6 +123,160 @@ header h1 {
     text-decoration: none;
 }
 
+.about-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 3rem;
+}
+
+.about-section h2 {
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+}
+
+.about-section ul {
+    margin-left: 2rem;
+    line-height: 2;
+}
+
+/* === POLLS & MEMES PAGES === */
+/* Styled info boxes for different message types */
+.info-box-yellow {
+    background: #fffbe6;
+    border-left: 4px solid var(--gold-accent);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+.info-box-green {
+    background: #f0fff4;
+    border-left: 4px solid var(--primary-green);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+.info-box-red {
+    background: #fff5f5;
+    border-left: 4px solid var(--primary-red);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+.poll-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.poll-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--shadow);
+}
+
+.poll-card h3 {
+    color: var(--primary-blue);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--gold-accent);
+}
+
+.poll-options button {
+    background: var(--primary-green);
+    color: var(--white);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.poll-options button:hover {
+    transform: scale(1.05); /* Enlarge button on hover */
+}
+
+
+/* === MEME UPLOAD FORM === */
+.upload-section {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+}
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input[type="file"] {
+    padding: 0.8rem;
+    border: 2px dashed var(--medium-gray);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.form-group input[type="file"]:hover {
+    border-color: var(--primary-blue);
+}
+.upload-btn {
+    background: var(--primary-red);
+    color: var(--white);
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.upload-btn:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* === MEME GALLERY === */
+.gallery-header {
+    text-align: center;
+    margin: 3rem 0 2rem 0;
+}
+.gallery-header h2 {
+    color: var(--primary-blue);
+}
+
+.meme-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.meme-item {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden; /* Prevents image from overflowing its container */
+    box-shadow: 0 4px 12px var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.meme-item:hover {
+    transform: scale(1.03);
+}
+
+.meme-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Prevents images from distorting */
+    display: block;
+}
+
 /* === FOOTER === */
 /* Footer styling */
 footer {
