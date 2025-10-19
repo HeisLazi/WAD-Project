@@ -19,7 +19,7 @@
     --dark-gray: #333333; /* for the footer */
     --text-color: #2c3e50; /* main text color */
     --shadow: rgba(0, 0, 0, 0.1);
-
+}
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
