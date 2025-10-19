@@ -25,11 +25,13 @@ It’s a full-stack project showcasing responsive design, database integration, 
 * Responsive grid layout
 
 *Database*
+
 MySQL database (polls and memes tables)
 Secure PHP backend with prepared statements
 Fast and safe data storage
 
 *Design*
+
 Mobile-friendly, responsive UI
 Smooth animations, clean layout
 Namibian-inspired color scheme
