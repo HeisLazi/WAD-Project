@@ -24,3 +24,33 @@
         <h1>😂 Campus Memes</h1
         <p>The real reason you're here. Upload and browse.</p>
     </header>
+    
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Upload section. Forms are the worst. -->
+        <div class="upload-section">
+            <h2>📤 Upload Your Masterpiece</h2>
+            <p>
+                Got a good meme? Share it. Please make sure it's a JPEG, PNG, or GIF. And not too big (under 5MB).
+            </p>
+            
+            <!-- The actual form for uploading -->
+            <form id="upload-form" class="upload-form">
+                <div class="form-group">
+                    <label for="meme-file">Choose your file:</label>
+                    <input 
+                        type="file" 
+                        id="meme-file" 
+                        name="meme" 
+                        accept="image/jpeg,image/jpg,image/png,image/gif" 
+                    >
+                    <small>Remember: JPEG, PNG, GIF only. Max 5MB.</small>
+                </div>
+                
+                <button type="submit" class="upload-button">
+                    Unleash Meme
+                </button>
+            </form>
+        </div>
+
+        
