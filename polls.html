@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vote on campus polls and see what everyone thinks.">
+    <meta name="authors" content="Lazarus & Sotama Urib">
+    <title>Campus Polls | Pls Vote</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- ibr copied the nav bar from index.html -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="polls.html">Polls</a></li>
+            <li><a href="memes.html">Memes</a></li>
+        </ul>
+    </nav>
+        <!-- Main Container -->
+    <div class="container">
+        <!-- Some instructions so people know what to do -->
+        <div class="info-box-yellow">
+            <h3>
+                ℹ️ How to Vote
+            </h3>
+            <p>
+                Just click the <strong>"Vote"</strong> button. The results should update by themselves.
+                You only get one vote, so choose wisely. Or don't.
+            </p>
+        </dvi>
+
+        <!-- The polls will get loaded in here by Javascript. Fingers crossed. -->
+        <div id="poll-containers" class="poll-container">
+            <!-- JS should put a loading spinner here while it fetches the data -->
+        </div>
+
+        <!-- "How it works" section was removed -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Campus Vibes Platform</p>
+        <p>A WAD621S Project by <strong>Lazarus</strong > & <strong>Sotama Urib</strong></p>
+        <p>Namibia University of Science and Technology (NUST)</p>
+    </footer>
+
+    <!-- script.js has all the magic for fetching polls and voting -->
+    <script src="js/script.js"></script>
+</body>
+</html>
